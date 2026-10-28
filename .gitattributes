@@ -1,0 +1,11 @@
+# Text files are stored and checked out with LF.
+* text=auto eol=lf
+
+# Published records are compared byte for byte against git history, so git must
+# never rewrite their line endings. These lines come after the one above so
+# that they win.
+data/ledger/** -text
+data/holdings/** -text
+data/ranked/** -text
+data/loadings/** -text
+content/rules/** -text
